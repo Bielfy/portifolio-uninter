@@ -1,4 +1,4 @@
-# Portfólio Pessoal – Dev. Gabriel T.
+# Portfólio UNINTER – Dev. Gabriel T.
 
 Este projeto é um portfólio pessoal desenvolvido com HTML e CSS, com o objetivo de apresentar um pouco sobre mim, minhas formações, habilidades e formas de contato. A página foi criada com foco em um design limpo, responsivo e funcional.
 
