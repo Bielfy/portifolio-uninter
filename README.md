@@ -24,8 +24,7 @@ Este projeto é um portfólio pessoal desenvolvido com HTML e CSS, com o objetiv
 
 ## Observação Acadêmica
 
-Este site foi desenvolvido como parte de um trabalho para a disciplina de **Aplicações Web e Móveis** do curso de graduação da faculdade.
-
+Este site foi desenvolvido como parte de um trabalho para a disciplina de **Aplicações Web e Móveis** do Bacharelado em Engenharia de Software da faculdade UNINTER
 ## Contribuições
 
 Sinta-se à vontade para enviar sugestões, melhorias ou relatar problemas abrindo uma issue ou pull request.  
