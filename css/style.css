@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+/* Importa a fonte "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;...');
 
+/* Variáveis de cor para facilitar a manutenção */
 :root {
     --cor-vermelho: #D63827;
     --cor-cinza-escuro-principal: #212529;
@@ -9,6 +11,7 @@
     --cor-preto: #000000;
 }
 
+/* Reset básico para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -16,22 +19,24 @@
     font-weight: 400;
 }
 
+/* Estiliza o body principal */
 body {
     height: 100vh;
-    box-sizing: border-box; /*define que nada vai ultrapassar os limites do body*/;
+    box-sizing: border-box;
 }
 
+/* Ajuste para o body da página de formação */
 .body-formacao {
     height: auto;
 }
 
-/* CABEÇALHO */
+/* ============ CABEÇALHO ============ */
 
 .cabecalho {
     background-color: var(--cor-cinza-escuro-principal);
     height: 9vh;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr; /* Espaçamento ao redor do título */
     align-items: center;
     padding: 0 2rem;
 }
@@ -41,19 +46,18 @@ body {
     color: var(--cor-vermelho);
     font-size: 36px;
     font-weight: 300;
-    margin: 0;
 }
 
 .cabecalho__titulo span {
-    color: var(--cor-branco);
+    color: var(--cor-branco); /* Destaque da parte "Dev." */
 }
 
-.cabecalho__menu ul{
+.cabecalho__menu ul {
     list-style: none;
-    justify-content: flex-end;
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .cabecalho__menu__links {
@@ -61,34 +65,36 @@ body {
     color: var(--cor-branco);
 }
 
-.cabecalho__menu__links-selecionado, .cabecalho__menu__links:hover{
+.cabecalho__menu__links-selecionado,
+.cabecalho__menu__links:hover {
     color: var(--cor-vermelho);
 }
 
-/* PRINCIPAL */
+/* ============ PRINCIPAL ============ */
 
 main {
     padding: 70px 287px;
     background-color: var(--cor-cinza-escuro);
 }
 
+/* Estilização específica para a página de formação */
 .main-formacao {
     padding: 0 162px;
     background-color: var(--cor-cinza-escuro);
-}   
+}
 
 .principal {
     width: 100%;
     height: 640px;
     background-color: var(--cor-cinza-escuro-principal);
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    border: solid 2px var(--cor-branco);
+    border: 2px solid var(--cor-branco);
     border-radius: 10px;
 }
 
-.principal__perfil{
+.principal__perfil {
     display: flex;
     flex-direction: row;
     gap: 480px;
@@ -96,7 +102,7 @@ main {
 
 .principal__perfil-alinhado {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 0;
 }
 
@@ -104,39 +110,34 @@ main {
     padding-top: 43px;
 }
 
-.principal__perfil__bio, .principal__perfil__bio-alinhado {
+.principal__perfil__bio,
+.principal__perfil__bio-alinhado {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-left: 68px;
-    margin-bottom: 16px;
-    margin-top: 67px;
-
+    justify-content: center;
     color: var(--cor-branco);
+    margin: 67px 0 16px 68px;
 }
 
 .principal__perfil__bio-alinhado {
-    
-    margin: 0;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
+/* Foto de perfil arredondada com borda */
 .principal__perfil__bio__foto-perfil {
-    width: 232px; /*Defina a largura desejada*/
-    height: 232px; /*Defina a altura desejada, igual à largura*/
-    border-radius: 50%; /*Arredonda as bordas, criando o círculo*/
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
     object-fit: cover;
-    border: solid var(--cor-vermelho) 3px;
-    position: relative;
+    border: 3px solid var(--cor-vermelho);
     z-index: 1;
     margin-bottom: 35px;
 }
 
-.principal__perfil__imgs{
+.principal__perfil__imgs {
     display: flex;
     flex-direction: row;
-    width: auto;
     margin-top: 63px;
     gap: 83px;
 }
@@ -148,14 +149,14 @@ main {
 
 .principal__paragrafo {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: var(--cor-branco);
     margin-bottom: 27px;
 }
 
-.principal__paragrafos-sobre{
+/* Texto do "Sobre" */
+.principal__paragrafos-sobre {
     padding: 0 170px;
     text-justify: auto;
 }
@@ -166,21 +167,23 @@ main {
     text-align: center;
 }
 
+/* Linha separadora */
 hr {
     border: none;
     height: 2px;
     width: 100%;
-    background-color: #D63827;
+    background-color: var(--cor-vermelho);
 }
 
+/* Remove sublinhado dos links */
 a {
     text-decoration: none;
 }
 
+/* Botões principais */
 .principal__buttons {
     height: 206px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 109px;
@@ -189,29 +192,28 @@ a {
 .principal__buttons__button {
     height: 68px;
     width: 155px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: var(--cor-cinza-escuro);
-    border: solid 2px var(--cor-preto);
+    border: 2px solid var(--cor-preto);
     color: var(--cor-branco);
     border-radius: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 11px;
 }
 
 .principal__buttons__button:hover {
-    border: solid 2px var(--cor-vermelho);
+    border: 2px solid var(--cor-vermelho);
 }
 
 .principal__buttons__button__img {
     width: 28px;
 }
 
+/* Cartões de formação */
 .principal__formacoes {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-bottom: 80px;
 }
@@ -221,9 +223,9 @@ a {
     flex-direction: column;
     width: 687px;
     height: 732px;
+    background-color: var(--cor-cinza-escuro-principal);
     border: 2px solid var(--cor-branco);
     align-items: center;
-    background-color: #212529;
     margin-top: 80px;
 }
 
@@ -236,26 +238,19 @@ a {
 
 .principal__formacoes__card__paragrafo {
     text-align: center;
-    margin: 0 24px;
-    margin-top: 22px;
+    margin: 22px 24px 0 24px;
     font-size: 20px;
     color: var(--cor-branco);
 }
 
+/* ============ FORMULÁRIO DE CONTATO ============ */
+
 .principal__caixas {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 0 100px;
     text-align: center;
-}
-
-.principal__caixas__formulario {
-    display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 100px;
-    text-align: center;
 }
 
 .principal__caixas__titulo {
@@ -271,16 +266,25 @@ a {
     text-shadow: 2px 2px black;
 }
 
+.principal__caixas__formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Labels dos inputs */
 .principal__caixas__formulario > label {
     display: flex;
     justify-content: left;
     font-size: 20px;
     color: var(--cor-branco);
-    font-weight: 400;
     margin-bottom: 10px;
     text-shadow: 2px 2px black;
 }
 
+/* Inputs de nome e email */
 #input {
     height: 20px;
     font-size: 18px;
@@ -291,33 +295,36 @@ a {
     border-radius: 10px;
 }
 
-#input:focus, textarea:focus {
+/* Estilo ao focar no input/textarea */
+#input:focus,
+textarea:focus {
     outline: none;
     border: 2px solid var(--cor-vermelho);
-
 }
 
+/* Área de texto (mensagem) */
 textarea {
     height: 373px;
     font-size: 18px;
     padding: 16px 15px;
     resize: none;
-    background-color:#D9D9D9 ;
+    background-color: #D9D9D9;
     border-radius: 10px;
     border: 2px solid var(--cor-preto);
 }
 
+/* Botão de envio */
 .principal__caixas__button {
     margin-top: 30px;
     width: 110px;
     height: 45px;
     font-size: 20px;
-    align-self:center;
     background-color: var(--cor-cinza-escuro-principal);
     border: 1px solid var(--cor-branco);
     color: var(--cor-branco);
     cursor: pointer;
     border-radius: 10px;
+    align-self: center;
 }
 
 .principal__caixas__button:hover {
@@ -325,17 +332,15 @@ textarea {
     border: none;
 }
 
-/* FOOTER */
+/* ============ RODAPÉ ============ */
 
 .footer {
     background-color: var(--cor-preto);
-    width: auto;
     height: 8vh;
-    color: #FFFFFF;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: var(--cor-branco);
 }
 
 .footer__paragrafo__span {

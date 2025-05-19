@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
 
+    <!-- Link para o CSS e ícone da aba -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/programacao.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Cabeçalho com título e menu de navegação -->
     <header class="cabecalho">
-        <div class="cabecalho__espaco-vazio"></div>
+        <div class="cabecalho__espaco-vazio"></div> <!-- Elemento usado para alinhamento -->
         <h1 class="cabecalho__titulo"><span>Dev.</span>Biel</h1>
         <nav class="cabecalho__menu">
             <ul>
+                <!-- Links do menu -->
                 <li><a class="cabecalho__menu__links cabecalho__menu__links-selecionado" href="../index.html">Home</a></li>
                 <li><a class="cabecalho__menu__links" href="sobre.html">Sobre</a></li>
                 <li><a class="cabecalho__menu__links" href="formacao.html" rel="noopener noreferrer">Formação</a></li>
@@ -21,7 +25,10 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Conteúdo principal da página -->
     <main>
+        <!-- Perfil do desenvolvedor -->
         <div class="principal__perfil principal__perfil-alinhado">
             <div class="principal__perfil__bio principal__perfil__bio-alinhado">
                 <img class="principal__perfil__bio__foto-perfil" src="../assets/foto-perfil.jpg" alt="">
@@ -29,26 +36,37 @@
                 <p>Dev. Backend</p>
             </div>
         </div>
+
+        <!-- Formulário de contato -->
         <div class="principal__caixas">
             <div class="principal__caixas__titulo">
                 <h2>Entre em contato:</h2>
             </div>
             <form action="" class="principal__caixas__formulario">
+                <!-- Campo nome -->
                 <label for="">Nome:</label>
                 <input id="input" type="text" placeholder="Seu nome" required>
 
+                <!-- Campo email -->
                 <label for="">Email:</label>
                 <input id="input" type="email" placeholder="Seu E-mail" required>
 
+                <!-- Campo mensagem -->
                 <label for="">Mensagem:</label>
-                <textarea  placeholder="Digite sua mensagem" required></textarea>
+                <textarea placeholder="Digite sua mensagem" required></textarea>
 
-                <button class= "principal__caixas__button" type="submit"> Enviar</button>
+                <!-- Botão de envio -->
+                <button class="principal__caixas__button" type="submit">Enviar</button>
             </form>
         </div>
     </main>
+
+    <!-- Rodapé da página -->
     <footer class="footer">
-        <p class="footer__paragrafo">Copyright © 2025 <span class="footer__paragrafo__span">Gabriel Teodoro</span>. Todos os direitos reservados.</p>
+        <p class="footer__paragrafo">
+            Copyright © 2025 
+            <span class="footer__paragrafo__span">Gabriel Teodoro</span>. Todos os direitos reservados.
+        </p>
     </footer>
 </body>
 </html>
